@@ -18,6 +18,8 @@
 		15A973DD2897A6E500A7DE9F /* ConcurrencyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A973DC2897A6E500A7DE9F /* ConcurrencyUITestsLaunchTests.swift */; };
 		15A973EB2897A82000A7DE9F /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A973EA2897A82000A7DE9F /* Info.swift */; };
 		15A973EE2897A99300A7DE9F /* Data+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A973ED2897A99300A7DE9F /* Data+Codable.swift */; };
+		15A973F02897B0C500A7DE9F /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A973EF2897B0C500A7DE9F /* Counter.swift */; };
+		15A973F22897B56400A7DE9F /* BankAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15A973F12897B56400A7DE9F /* BankAccount.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		15A973DC2897A6E500A7DE9F /* ConcurrencyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrencyUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		15A973EA2897A82000A7DE9F /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		15A973ED2897A99300A7DE9F /* Data+Codable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Codable.swift"; sourceTree = "<group>"; };
+		15A973EF2897B0C500A7DE9F /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		15A973F12897B56400A7DE9F /* BankAccount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccount.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +141,8 @@
 			isa = PBXGroup;
 			children = (
 				15A973EA2897A82000A7DE9F /* Info.swift */,
+				15A973EF2897B0C500A7DE9F /* Counter.swift */,
+				15A973F12897B56400A7DE9F /* BankAccount.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -282,8 +288,10 @@
 			files = (
 				15A973EE2897A99300A7DE9F /* Data+Codable.swift in Sources */,
 				15A973BE2897A6E300A7DE9F /* ViewController.swift in Sources */,
+				15A973F02897B0C500A7DE9F /* Counter.swift in Sources */,
 				15A973EB2897A82000A7DE9F /* Info.swift in Sources */,
 				15A973BA2897A6E300A7DE9F /* AppDelegate.swift in Sources */,
+				15A973F22897B56400A7DE9F /* BankAccount.swift in Sources */,
 				15A973BC2897A6E300A7DE9F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

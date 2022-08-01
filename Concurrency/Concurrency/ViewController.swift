@@ -12,15 +12,25 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("---Completion---")
         getData { data in
             data.decode(to: [Info].self) { decodedValue in
-                print(decodedValue)
+//                print(decodedValue)
             }
         }
         
         Task {
             await initialize()
+        }
+        
+        Task {
+            let counter = Counter()
+            await counter.increment()
+        }
+        
+        let bankAccount = BankAccount(accountNumber: 10, initialDeposit: 20)
+        
+        Task {
+            await bankAccount.deposit(amount: 200)
         }
     }
     
@@ -37,11 +47,9 @@ class ViewController: UIViewController {
     }
     
     private func initialize() async {
-        print("---Async Await---")
         do {
             let data = try await getData()
             let decodedValue = try await data.decode(to: [Info].self)
-            print(decodedValue)
         } catch {
             // Error
         }
